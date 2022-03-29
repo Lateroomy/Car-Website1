@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+	background-color: white;
+	font-family: 'Roboto' , sans-serif;
+	margin: 0;
+}
+header {
+	background-image: url("car-bg.jpeg");
+	background-size: cover;
+	color: white;
+	display: flex;
+	min-height: 100vh;
+	background-position: center center;
+	align-items: flex-start;
+	flex-direction: column;
+}
+.container {
+	max-width: 1000px;
+	width: 1000px
+		
+}
+.content{
+	font-size: 1.5rem;
+	margin: auto;
+}
+.content h1{
+	color: #00c2ff;
+	margin-bottom: 0;
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;
+}
+
+nav .logo {
+	font-size: 2rem;
+}
+nav ul {
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+}
+nav li a {
+	color: white;
+	padding: 1rem;
+	text-decoration: none;
+}
+.selected {
+	font-weight: bold;
+}
+.highlights{
+	background-color: #00c2ff;
+	color: white;
+	padding: 1rem;
+	text-decoration: none;
+}
+
+footer {
+	background-color: black;
+	color: white;
+	height: 100px;
+}
+
+footer ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	list-style-type: none;
+	padding: 1rem;
+}
+footer strong{
+	color:#00c2ff;
+}
+footer p{
+	margin: 0;
+}
+@media screen and (max-width: 700px){
+	nav ul{
+		flex-direction: column;
+	}
+	nav li{
+		margin: 0.5rem 0;
+	}
+	nav .highlights{
+		display: none;
+	}
+	footer ul{
+		flex-direction: column;
+		justify-content: center;
+	}
+	footer li{
+		margin: 1rem;
+	}
+}
